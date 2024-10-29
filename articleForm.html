@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Евгений Касперский</h1>
+    <img src="img/Kaspersky.svg" alt="логотип" width="100px">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="tabl">
+      <h2>Обратная связь</h2>
+      <form id="contact-form">
+          <div>
+            <label for="topic">Тема</label><br>
+            <select name="topic" id="topic">
+              <option value="1">Заказать услугу</option>
+              <option value="2">Оставить отзыв/замечание</option>
+              <option value="3">Предложить сотрудничество</option>
+              <option value="4">Другое</option>
+            </select>
+          </div>
+          <div class="form_item">
+            <label for="name">Имя</label><br>
+            <input name="name" id="name" type="text" placeholder="Ваше имя" required>
+          </div>
+          <div class="form_item">
+            <label for="email">E-mail</label><br>
+            <input name="email" id="email" type="email" placeholder="Ваш e-mail" required>
+          </div>
+          <div>
+            <br>
+            <label for="pole">Текст сообщения</label><br>
+            <textarea name="pole" id="pole" cols="30" rows="10" placeholder="Комментарии" required></textarea>
+          </div>
+          <div class="form_item">
+            <input type="submit">
+          </div>
+        </form>
+    </section>
+  </main>
+  <footer>
+    <b>
+      <img src="img/discord.svg" alt="логотип" width="20px">
+      <p>&copy; Калетник Евгения, 2024</p>
+      <a href="tel:+87712812363">+77712812363</a>
+      <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+      <time datetime="2024-10-28T10:00">
+        10:00 28.10.2024
+    </b>
+  </footer>
+</body>
+
+</html>
